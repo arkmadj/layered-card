@@ -12,5 +12,10 @@ body {
 
 .welcome {
   background: lightblue;
-  grid-column: 1/ -1;
+  grid-column: 1 / -1;
+}
+
+.start-chatting {
+  background: coral;
+  grid-column: 2 / 3;
 }
