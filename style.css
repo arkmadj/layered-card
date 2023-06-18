@@ -17,7 +17,7 @@ body {
 	place-content: center;
 	font-family: system-ui;
 	text-align: center;
-  color: var(--clr-neutral-900);
+	color: var(--clr-neutral-900);
 }
 
 .card {
@@ -54,10 +54,10 @@ body {
 	background: var(--clr-neutral-100);
 	border-radius: 0.5rem;
 	box-shadow: 0 0 1rem black;
-  padding: 2rem 4rem 4rem;
+	padding: 2rem 4rem 4rem;
 
-  display: grid;
-  gap: 2rem;
+	display: grid;
+	gap: 2rem;
 }
 
 .start-chatting > * {
@@ -71,4 +71,39 @@ body {
 
 .rep-info > * {
 	margin: 0;
+}
+
+.name {
+	font-size: 1.125rem;
+}
+
+.status {
+  display: flex;
+  gap: .35em;
+  align-items: center;
+	font-size: 0.875rem;
+	border: 1px solid rgb(133, 133, 133);
+	border-radius: 100vw;
+	opacity: 0.7;
+	width: max-content;
+	padding: 0.05em 0.75em;
+	margin-inline: auto;
+	opacity: 0.7;
+}
+
+.status::before{
+  content: '';
+  height: .5em;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: var(--status-color, black);
+}
+
+.status[data-status="active"] {
+  --status-color: limegreen;
+}
+
+
+.status[data-status="away"] {
+  --status-color: rgb(216, 152, 14);
 }
