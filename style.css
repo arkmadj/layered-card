@@ -20,6 +20,24 @@ body {
 	color: var(--clr-neutral-900);
 }
 
+.button {
+	padding: 1em;
+	background: var(--gradient);
+	color: var(--clr-neutral-100);
+	border: 0;
+	border-radius: 0.25rem;
+	font-size: 1.05rem;
+	cursor: pointer;
+	background-size: 100%;
+	transition: background-size 200ms, scale 250ms ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+	background-size: 200%;
+	scale: 1.05;
+}
+
 .card {
 	display: grid;
 	grid-template-columns: 2rem 20rem 2rem;
@@ -78,9 +96,9 @@ body {
 }
 
 .status {
-  display: flex;
-  gap: .35em;
-  align-items: center;
+	display: flex;
+	gap: 0.35em;
+	align-items: center;
 	font-size: 0.875rem;
 	border: 1px solid rgb(133, 133, 133);
 	border-radius: 100vw;
@@ -91,19 +109,18 @@ body {
 	opacity: 0.7;
 }
 
-.status::before{
-  content: '';
-  height: .5em;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background: var(--status-color, black);
+.status::before {
+	content: "";
+	height: 0.5em;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	background: var(--status-color, black);
 }
 
 .status[data-status="active"] {
-  --status-color: limegreen;
+	--status-color: limegreen;
 }
 
-
 .status[data-status="away"] {
-  --status-color: rgb(216, 152, 14);
+	--status-color: rgb(216, 152, 14);
 }
