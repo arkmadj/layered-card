@@ -1,8 +1,10 @@
-:root{
-  --clr-primary: hsl(215, 99%, 66%);
-  --clr-secondary: hsl(259, 69%, 65%);
-  --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-100: hsl(230, 32%, 15%);
+:root {
+	--clr-primary: hsl(215, 99%, 66%);
+	--clr-secondary: hsl(259, 69%, 65%);
+	--clr-neutral-100: hsl(0, 0%, 100%);
+	--clr-neutral-900: hsl(230, 32%, 15%);
+
+	--gradient: 45deg, var(--clr-primary), var(--clr-secondary);
 }
 
 body {
@@ -28,7 +30,7 @@ body {
 }
 
 .welcome div {
-  grid-column: 2 / 3;
+	grid-column: 2 / 3;
 }
 
 .start-chatting {
