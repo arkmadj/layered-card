@@ -9,3 +9,8 @@ body {
   grid-template-columns: 2rem 20rem 2rem;
   grid-template-rows: repeat(3, auto);
 }
+
+.welcome {
+  background: lightblue;
+  grid-column: 1/ -1;
+}
