@@ -36,4 +36,5 @@ body {
 .start-chatting {
 	background: coral;
 	grid-column: 2 / 3;
+  grid-row: 2 / 4;
 }
