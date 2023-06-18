@@ -4,7 +4,7 @@
 	--clr-neutral-100: hsl(0, 0%, 100%);
 	--clr-neutral-900: hsl(230, 32%, 15%);
 
-	--gradient: linear-gradient(45deg, var(--clr-primary), var(--clr-secondary));
+	--gradient: linear-gradient(-255deg, var(--clr-primary), var(--clr-secondary));
 }
 
 body {
