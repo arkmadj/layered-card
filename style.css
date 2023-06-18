@@ -1,3 +1,10 @@
+:root{
+  --clr-primary: hsl(215, 99%, 66%);
+  --clr-secondary: hsl(259, 69%, 65%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-100: hsl(230, 32%, 15%);
+}
+
 body {
 	min-height: 100vh;
 	display: grid;
